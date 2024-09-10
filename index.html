@@ -2,10 +2,12 @@
 <html lang="" dir="ltr">
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="java.js"></script>
     <meta charset="utf-8">
-    <title>Familieboom</title>
+    <title>Familie Rietbergen</title>
   </head>
-  <button onclick="sortListDir()">Sort</button>
+  <!--<button onclick="sortListDir()">Sort</button>
   <ul id="id01">
     <li><a href="personen/1854RietbergenJan.html">Jan Rietbergen 1854</a></li>
     <li><a href="personen/1856vanVoornAntonius.html">Antonius van Voorn 1856</a></li>
@@ -15,62 +17,48 @@
     <li><a href="personen/1886vanVoornHerlenaGeertruida.html">Helena Geertruida van Voorn 1886</a></li>
     <li><a href="personen/1891vanVoornTheodoraJohanna.html">Theodora Johanna van Voorn 1891</a></li>
     <li><a href="personen/1893vanVoornJohannaMaria.html">Johanna Maria van Voorn 1893</a></li>
-  </ul>
+  </ul>-->
   <body>
-    <h1>INTRO hello world</h1>
+    <header>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-12" viewBox="0 0 40 41">
+          <path d="M30.967 27.727l-.03-.03c-.778-.777-2.038-.777-2.815 0l-1.21 1.21c-.78.78-.778 2.04 0 2.817l.03.03 4.025-4.027zm1.083 1.084L39.24 36c.778.778.78 2.037 0 2.816l-1.21 1.21c-.777.778-2.038.78-2.816 0l-7.19-7.19 4.026-4.025zM15.724 31.45c8.684 0 15.724-7.04 15.724-15.724C31.448 7.04 24.408 0 15.724 0 7.04 0 0 7.04 0 15.724c0 8.684 7.04 15.724 15.724 15.724zm0-3.93c6.513 0 11.793-5.28 11.793-11.794 0-6.513-5.28-11.793-11.793-11.793C9.21 3.93 3.93 9.21 3.93 15.725c0 6.513 5.28 11.793 11.794 11.793z" fill-rule="evenodd" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-5" viewBox="0 0 20 20">
+          <path d="M10 20c5.523 0 10-4.477 10-10S15.523 0 10 0 0 4.477 0 10s4.477 10 10 10zm1.35-10.123l3.567 3.568-1.225 1.226-3.57-3.568-3.567 3.57-1.226-1.227 3.568-3.568-3.57-3.57 1.227-1.224 3.568 3.568 3.57-3.567 1.224 1.225-3.568 3.57zM10 18.272c4.568 0 8.272-3.704 8.272-8.272S14.568 1.728 10 1.728 1.728 5.432 1.728 10 5.432 18.272 10 18.272z" fill-rule="evenodd" />
+        </symbol>
+      </svg>
+
+      <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+        <div role="search" class="sbx-custom__wrapper">
+          <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
+          <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+            <svg role="img" aria-label="Search">
+              <use xlink:href="#sbx-icon-search-12"></use>
+            </svg>
+          </button>
+          <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+            <svg role="img" aria-label="Reset">
+              <use xlink:href="#sbx-icon-clear-5"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <script type="text/javascript">
+        document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+      </script>
+    </header>
+    <section class="Rietbergen">
+      <h1>- Rietbergen -</h1>
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-    <script>
-      function sortListDir() {
-        var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-        list = document.getElementById("id01");
-        switching = true;
-        // Set the sorting direction to ascending:
-        dir = "asc";
-        // Make a loop that will continue until no switching has been done:
-        while (switching) {
-          // start by saying: no switching is done:
-          switching = false;
-          b = list.getElementsByTagName("LI");
-          // Loop through all list-items:
-          for (i = 0; i < (b.length - 1); i++) {
-            //start by saying there should be no switching:
-            shouldSwitch = false;
-            /* check if the next item should switch place with the current item,
-            based on the sorting direction (asc or desc): */
-            if (dir == "asc") {
-              if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-                /* if next item is alphabetically lower than current item,
-                mark as a switch and break the loop: */
-                shouldSwitch = true;
-                break;
-              }
-            } else if (dir == "desc") {
-              if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
-                /* if next item is alphabetically higher than current item,
-                mark as a switch and break the loop: */
-                shouldSwitch= true;
-                break;
-              }
-            }
-          }
-          if (shouldSwitch) {
-            /* If a switch has been marked, make the switch
-            and mark that a switch has been done: */
-            b[i].parentNode.insertBefore(b[i + 1], b[i]);
-            switching = true;
-            // Each time a switch is done, increase switchcount by 1:
-            switchcount ++;
-          } else {
-            /* If no switching has been done AND the direction is "asc",
-            set the direction to "desc" and run the while loop again. */
-            if (switchcount == 0 && dir == "asc") {
-              dir = "desc";
-              switching = true;
-            }
-          }
-        }
-      }
-      </script>
   </body>
 </html>
