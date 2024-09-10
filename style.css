@@ -1,0 +1,23 @@
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.stats {
+  float: right;
+  padding: 10px;
+  background-color: #d3d3d3;
+  width: 400;
+  height: 460;
+}
+
+p { margin: 5px 0;}
