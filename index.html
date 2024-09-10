@@ -5,18 +5,72 @@
     <meta charset="utf-8">
     <title>Familieboom</title>
   </head>
-  <ol>
-    <li><a href="personen/1854RietbergenJan.html">Jan Rietbergen</a></li>
-    <li><a href="personen/1856vanVoornAntonius.html">Antonius van Voorn</a></li>
-    <li><a href="personen/1862vanderVosMaria.html">Maria van der Vos</a></li>
-    <li><a href="personen/1883vanVoornJohannaMaria.html">Johanna Maria van Voorn</a></li>
-    <li><a href="personen/1885vanVoornMariaJohanna.html">Maria Johanna van Voorn</a></li>
-    <li><a href="personen/1886vanVoornHerlenaGeertruida.html">Helena Geertruida van Voorn</a></li>
-    <li><a href="personen/1891vanVoornTheodoraJohanna.html">Theodora Johanna van Voorn</a></li>
-    <li><a href="personen/1893vanVoornJohannaMaria.html">Johanna Maria van Voorn</a></li>
-  </ol>
+  <button onclick="sortListDir()">Sort</button>
+  <ul id="id01">
+    <li><a href="personen/1854RietbergenJan.html">Jan Rietbergen 1854</a></li>
+    <li><a href="personen/1856vanVoornAntonius.html">Antonius van Voorn 1856</a></li>
+    <li><a href="personen/1862vanderVosMaria.html">Maria van der Vos 1862</a></li>
+    <li><a href="personen/1883vanVoornJohannaMaria.html">Johanna Maria van Voorn 1883</a></li>
+    <li><a href="personen/1885vanVoornMariaJohanna.html">Maria Johanna van Voorn 1885</a></li>
+    <li><a href="personen/1886vanVoornHerlenaGeertruida.html">Helena Geertruida van Voorn 1886</a></li>
+    <li><a href="personen/1891vanVoornTheodoraJohanna.html">Theodora Johanna van Voorn 1891</a></li>
+    <li><a href="personen/1893vanVoornJohannaMaria.html">Johanna Maria van Voorn 1893</a></li>
+  </ul>
   <body>
     <h1>INTRO hello world</h1>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <script>
+      function sortListDir() {
+        var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+        list = document.getElementById("id01");
+        switching = true;
+        // Set the sorting direction to ascending:
+        dir = "asc";
+        // Make a loop that will continue until no switching has been done:
+        while (switching) {
+          // start by saying: no switching is done:
+          switching = false;
+          b = list.getElementsByTagName("LI");
+          // Loop through all list-items:
+          for (i = 0; i < (b.length - 1); i++) {
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /* check if the next item should switch place with the current item,
+            based on the sorting direction (asc or desc): */
+            if (dir == "asc") {
+              if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                /* if next item is alphabetically lower than current item,
+                mark as a switch and break the loop: */
+                shouldSwitch = true;
+                break;
+              }
+            } else if (dir == "desc") {
+              if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+                /* if next item is alphabetically higher than current item,
+                mark as a switch and break the loop: */
+                shouldSwitch= true;
+                break;
+              }
+            }
+          }
+          if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+            // Each time a switch is done, increase switchcount by 1:
+            switchcount ++;
+          } else {
+            /* If no switching has been done AND the direction is "asc",
+            set the direction to "desc" and run the while loop again. */
+            if (switchcount == 0 && dir == "asc") {
+              dir = "desc";
+              switching = true;
+            }
+          }
+        }
+      }
+      </script>
   </body>
 </html>
