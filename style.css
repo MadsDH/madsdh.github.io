@@ -24,35 +24,57 @@ a:hover {
 }
 
 header {
-  background-color: #FFEFE5;
-  padding: 30px;
+  background-color: #7D7C58;
+  padding: 15px;
   text-align: right;
 }
 
 body {
   margin: 0;
-  font-family:Arial;
+
+  background-image: url("https://www.artspainter.com/wp-content/uploads/2021/09/birmingham-museums-trust-BPWZ01FtySg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .Rietbergen {
   /* NOTE:  background-color: Gray;*/
+  color: black;
   padding: 10px;
   text-align: center;
   font-size: 100px;
-  height: 500px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-family: serif;
 }
 
+.replacegoogleform {
+  display: none;
+  text-align: center;
+  background-color: Lightblue;
+  color: black;
+
+}
+.googleform {
+  display: block;
+  margin: auto;
+}
 
 .mainmenu {
+  background-color:#7D7C58;
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
 
+@media only screen and (max-width: 640px) {
+  .googleform {
+    display: none;
+  }
+  .replacegoogleform {
+    display: block;
   }
   .Rietbergen {
     font-size: 50px;
@@ -60,32 +82,33 @@ body {
   }
   .menu, .footer {
     width: 150px;
-
   }
+
 }
 
 .menu, .footer {
-	background-color:#FFEFE5;
+	background-color:#FEF7E5;
 	display:inline-block;
 	cursor:pointer;
 	font-size:15px;
 	font-weight:bold;
 	padding: 24px 48px;
-	text-shadow:0px -1px 0px #ffffff;
+	/* NOTE: text-shadow:0px -1px 0px black; */
   color: black;
   margin: 10px;
   text-align:  center;
+  font-family: arial;
 }
 .menu {
-  box-shadow: 0px 1px 3px 0px #91b8b3;
+  box-shadow: 0px 1px 3px 0px #000000;
 }
 
 .menu:visited, .footer:visited{
-  color:#000000;
+  color: black;
 }
 
 .menu:hover, .footer:hover{
-	background-color:#fae0cf;
+	background-color:#faf1d9;
 }
 
 .menu:active {
@@ -95,29 +118,29 @@ body {
 
 footer {
   /* NOTE:  background-color: lightGray;*/
-  padding: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
-  font-size: 100px
 }
 
 footer a{
   height: 24px;
   width: 20%;
-  border: 2px solid #853718;
-  box-shadow: 0px 0px 5px 5px #ffefe5;
+  border: 2px solid #7D7C58;
+  box-shadow: 0px 0px 5px 5px #FEF7E5;
 }
 
 .homebtn {
-  background-color: #ffefe5;
+  background-color: #7D7C58;
   border: none;
-  color: #853718;
+  color: #FEF7E5;
   font-size: 48px;
   cursor: pointer;
   float: left;
 }
 
 #homebtn:visited, #homebtn {
-  color: #853718;
+  color: #FEF7E5;
 }
 
 
@@ -143,9 +166,9 @@ footer a{
   -webkit-transition: box-shadow .4s ease, background .4s ease;
   transition: box-shadow .4s ease, background .4s ease;
   border: 0;
-  border-radius: 26px;
-  box-shadow: inset 0 0 0 2px #853718;
-  background: #FFEFE5;
+  border-radius: 0px;
+  box-shadow: inset 0 0 0 2px #FEF7E5;
+  background: #7D7C58;
   padding: 0;
   padding-right: 78px;
   padding-left: 22px;
@@ -157,6 +180,7 @@ footer a{
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-style: italic;
 }
 
 .sbx-custom__input::-webkit-search-decoration, .sbx-custom__input::-webkit-search-cancel-button, .sbx-custom__input::-webkit-search-results-button, .sbx-custom__input::-webkit-search-results-decoration {
@@ -164,29 +188,29 @@ footer a{
 }
 
 .sbx-custom__input:hover {
-  box-shadow: inset 0 0 0 2px #5a2510;
+  box-shadow: inset 0 0 0 2px #faf1d9;
 }
 
 .sbx-custom__input:focus, .sbx-custom__input:active {
   outline: 0;
-  box-shadow: inset 0 0 0 2px #853718;
+  box-shadow: inset 0 0 0 2px #FEF7E5;
   background: white;
 }
 
 .sbx-custom__input::-webkit-input-placeholder {
-  color: #853718;
+  color: #FEF7E5;
 }
 
 .sbx-custom__input::-moz-placeholder {
-  color: #853718;
+  color: #FEF7E5;
 }
 
 .sbx-custom__input:-ms-input-placeholder {
-  color: #853718;
+  color: #FEF7E5;
 }
 
 .sbx-custom__input::placeholder {
-  color: #853718;
+  color: #FEF7E5;
 }
 
 .sbx-custom__submit {
@@ -230,7 +254,7 @@ footer a{
   width: 31px;
   height: 31px;
   vertical-align: middle;
-  fill: #853718;
+  fill: #FEF7E5;
 }
 
 .sbx-custom__reset {
