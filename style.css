@@ -50,6 +50,20 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+
+  }
+  .Rietbergen {
+    font-size: 50px;
+    height: 100px
+  }
+  .menu, .footer {
+    width: 150px;
+
+  }
+}
+
 .menu, .footer {
 	background-color:#FFEFE5;
 	display:inline-block;
@@ -102,7 +116,7 @@ footer a{
   float: left;
 }
 
-#homebtn:visited {
+#homebtn:visited, #homebtn {
   color: #853718;
 }
 
