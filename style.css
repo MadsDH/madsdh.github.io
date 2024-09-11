@@ -25,7 +25,7 @@ a:hover {
 
 header {
   background-color: #7D7C58;
-  padding: 15px;
+  padding: 7.5px;
   text-align: right;
 }
 
@@ -130,19 +130,20 @@ footer a{
   height: 24px;
   width: 20%;
   border: 2px solid #7D7C58;
-  box-shadow: 0px 0px 5px 5px #FEF7E5;
+  box-shadow: 0px 0px 5px 5px #7D7C58;
 }
 
 .homebtn {
   background-color: #7D7C58;
   border: none;
   color: #FEF7E5;
-  font-size: 48px;
+  font-size: 32px;
   cursor: pointer;
   float: left;
 }
 
-#homebtn:visited, #homebtn {
+#homebtn, #homebtn:visited {
+  padding: 10px;
   color: #FEF7E5;
 }
 
@@ -153,7 +154,7 @@ footer a{
   display: inline-block;
   position: relative;
   width: 300px;
-  height: 51px;
+  height: 41px;
   white-space: nowrap;
   box-sizing: border-box;
   font-size: 14px;
@@ -254,8 +255,8 @@ footer a{
 }
 
 .sbx-custom__submit svg {
-  width: 31px;
-  height: 31px;
+  width: 21px;
+  height: 21px;
   vertical-align: middle;
   fill: #FEF7E5;
 }
