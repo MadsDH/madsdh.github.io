@@ -40,7 +40,7 @@ body {
 
 .Rietbergen {
   /* NOTE:  background-color: Gray;*/
-  text-shadow: 3px 3px 5px #886144;
+  text-shadow: 3px 3px 5px #27351C;
   color: black;
   padding: 10px;
   text-align: center;
@@ -69,6 +69,10 @@ body {
   text-align: center;
 }
 
+.sbx-custom {
+  width: 500px;
+}
+
 @media only screen and (max-width: 370px) {
     .homebtn {
       display: none;
@@ -93,6 +97,9 @@ body {
   }
   .mainmenu {
     background-color: transparent;
+  }
+  .sbx-custom {
+    width: 200px;
   }
 
 }
@@ -160,8 +167,7 @@ footer a{
 .sbx-custom {
   display: inline-block;
   position: relative;
-  width: 300px;
-  height: 41px;
+  height: 31px;
   white-space: nowrap;
   box-sizing: border-box;
   font-size: 14px;
@@ -262,8 +268,8 @@ footer a{
 }
 
 .sbx-custom__submit svg {
-  width: 21px;
-  height: 21px;
+  width: 16px;
+  height: 16px;
   vertical-align: middle;
   fill: #FEF7E5;
 }
@@ -292,7 +298,6 @@ footer a{
 
 .sbx-custom__reset svg {
   display: block;
-  margin: 4px;
   width: 19px;
   height: 19px;
 }
