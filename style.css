@@ -31,7 +31,7 @@ header {
 
 body {
   margin: 0;
-
+  font-family: arial;
   background-image: url("lightbackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,6 +40,7 @@ body {
 
 .Rietbergen {
   /* NOTE:  background-color: Gray;*/
+  text-shadow: 3px 3px 5px #886144;
   color: black;
   padding: 10px;
   text-align: center;
@@ -103,14 +104,13 @@ body {
 	font-size:15px;
 	font-weight:bold;
 	padding: 24px 48px;
-	/* NOTE: text-shadow:0px -1px 0px black; */
+	text-shadow: 0px 0px 1px #886144;
   color: black;
   margin: 10px;
   text-align:  center;
-  font-family: arial;
 }
 .menu {
-  box-shadow: 0px 1px 3px 0px #000000;
+  box-shadow: 0px 1px 3px 0px #886144;
 }
 
 .menu:visited, .footer:visited{
