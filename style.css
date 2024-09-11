@@ -32,7 +32,7 @@ header {
 body {
   margin: 0;
 
-  background-image: url("https://www.artspainter.com/wp-content/uploads/2021/09/birmingham-museums-trust-BPWZ01FtySg-unsplash.jpg");
+  background-image: url("lightbackground.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -68,7 +68,14 @@ body {
   text-align: center;
 }
 
-
+@media only screen and (max-width: 370px) {
+    .homebtn {
+      display: none;
+    }
+    header {
+      text-align: center;
+    }
+}
 @media only screen and (max-width: 640px) {
   .googleform {
     display: none;
