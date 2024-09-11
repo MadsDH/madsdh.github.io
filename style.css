@@ -31,54 +31,80 @@ header {
 
 body {
   margin: 0;
+  font-family:Arial;
 }
 
 .Rietbergen {
+  /* NOTE:  background-color: Gray;*/
   padding: 10px;
-  background-color: Gray;
   text-align: center;
-  vertical-align: bottom;
-  display: block;
-  font-size: 90px;
+  font-size: 100px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 
 .mainmenu {
   text-align: center;
 }
-.menu {
-	box-shadow: 0px 1px 3px 0px #91b8b3;
+
+.menu, .footer {
 	background-color:#FFEFE5;
 	display:inline-block;
 	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
 	padding: 24px 48px;
-	text-decoration:none;
 	text-shadow:0px -1px 0px #ffffff;
+  color: black;
   margin: 10px;
   text-align:  center;
 }
-.menu:visited{
+.menu {
+  box-shadow: 0px 1px 3px 0px #91b8b3;
+}
+
+.menu:visited, .footer:visited{
   color:#000000;
 }
-.menu:hover {
-	background-color:#FFEFE5;
+
+.menu:hover, .footer:hover{
+	background-color:#fae0cf;
 }
+
 .menu:active {
 	position:relative;
 	top:1px;
 }
 
 footer {
-  background-color: lightGray;
+  /* NOTE:  background-color: lightGray;*/
   padding: 10px;
   text-align: center;
- font-size: 100px
+  font-size: 100px
 }
 
+footer a{
+  height: 24px;
+  width: 20%;
+  border: 2px solid #853718;
+  box-shadow: 0px 0px 5px 5px #ffefe5;
+}
+
+.homebtn {
+  background-color: #ffefe5;
+  border: none;
+  color: #853718;
+  font-size: 48px;
+  cursor: pointer;
+  float: left;
+}
+
+#homebtn:visited {
+  color: #853718;
+}
 
 
 
@@ -130,7 +156,7 @@ footer {
 .sbx-custom__input:focus, .sbx-custom__input:active {
   outline: 0;
   box-shadow: inset 0 0 0 2px #853718;
-  background: #FFEFE5;
+  background: white;
 }
 
 .sbx-custom__input::-webkit-input-placeholder {
