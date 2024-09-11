@@ -35,21 +35,49 @@ body {
 
 .Rietbergen {
   padding: 10px;
-  background-color: blue;
+  background-color: Gray;
   text-align: center;
-
-}
-
-.Rietbergen H1 {
   vertical-align: bottom;
   display: block;
-  font-size: 100px
-
+  font-size: 90px;
 }
 
 
+.mainmenu {
+  text-align: center;
+}
+.menu {
+	box-shadow: 0px 1px 3px 0px #91b8b3;
+	background-color:#FFEFE5;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding: 24px 48px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #ffffff;
+  margin: 10px;
+  text-align:  center;
+}
+.menu:visited{
+  color:#000000;
+}
+.menu:hover {
+	background-color:#FFEFE5;
+}
+.menu:active {
+	position:relative;
+	top:1px;
+}
 
-
+footer {
+  background-color: lightGray;
+  padding: 10px;
+  text-align: center;
+ font-size: 100px
+}
 
 
 
