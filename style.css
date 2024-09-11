@@ -83,6 +83,9 @@ body {
   .menu, .footer {
     width: 150px;
   }
+  .mainmenu {
+    background-color: transparent;
+  }
 
 }
 
