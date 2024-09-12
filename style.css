@@ -25,7 +25,7 @@ a:hover {
 
 header {
   background-color: #7D7C58;
-  padding: 7.5px;
+  padding: 8px;
   text-align: right;
 }
 
@@ -44,7 +44,7 @@ body {
   color: black;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 100px;
+  height: auto;
   font-size: 80px;
   text-align: center;
   justify-content: center;
@@ -143,22 +143,23 @@ footer {
 
 footer a{
   height: 24px;
-  width: 20%;
   border: 2px solid #7D7C58;
   box-shadow: 0px 0px 5px 5px #7D7C58;
 }
 
 .homebtn {
-  background-color: #7D7C58;
-  border: none;
+  background-color: inherit;
   color: #FEF7E5;
-  font-size: 32px;
+  border: none;
+  font-size: 27px;
   cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
   float: left;
+  height: inherit;
 }
 
 #homebtn, #homebtn:visited {
-  padding: 10px;
   color: #FEF7E5;
 }
 
