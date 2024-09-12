@@ -1,5 +1,7 @@
 
-p { margin: 5px 0;}
+p {
+  margin: 5px 0;
+}
 
 a {
   color: blue;
@@ -42,7 +44,7 @@ body {
   /* NOTE:  background-color: Gray;*/
   text-shadow: 3px 3px 5px #27351C;
   color: black;
-  padding-top: 20px;
+  padding-top: 120px;
   padding-bottom: 20px;
   height: auto;
   font-size: 80px;
@@ -143,6 +145,7 @@ footer {
 
 footer a{
   height: 24px;
+  width: 20%;
   border: 2px solid #7D7C58;
   box-shadow: 0px 0px 5px 5px #7D7C58;
 }
@@ -151,16 +154,18 @@ footer a{
   background-color: inherit;
   color: #FEF7E5;
   border: none;
-  font-size: 27px;
-  cursor: pointer;
+  font-size: 24px;
   padding: 0;
   margin-left: 10px;
   float: left;
-  height: inherit;
 }
 
 #homebtn, #homebtn:visited {
   color: #FEF7E5;
+}
+
+img {
+
 }
 
 
