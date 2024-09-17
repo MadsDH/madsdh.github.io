@@ -17,12 +17,53 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  font-family: serif;
+
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  margin: 40px
+}
+
 .stats {
   float: right;
   padding: 10px;
   background-color: #d3d3d3;
   width: 400;
   height: 460;
+}
+
+.timeframe {
+  display: inline-block;
+  background-color: #d3d3d3;
+  margin-left: 40px;
+  width: 60%;
+  height: 720px;
+}
+
+.timeframe-image {
+  display: inline-block;
+  background-color: aqua;
+  margin-right: 40px;
+  float: right;
+  width: 35%;
+  height: 360px;
+}
+
+.timeframe-story {
+  display: flex;
+  background-color: darkred;
+  margin-right: 40px;
+  float: right;
+  width: 35%;
+  height: 360px;
+}
+
+.filters {
+  margin-left: 40px;
+  background-color: yellow;
+  width: 60%;
+  height: 25px;
 }
 
 header {
@@ -34,10 +75,15 @@ header {
 body {
   margin: 0;
   font-family: arial;
-  background-image: url("lightbackground.jpg");
+  background-color: #FFF7EF;
+}
+
+.index {
+  background-image: url("lightbackground2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: 50% 10%;
 }
 
 .Rietbergen {
@@ -167,8 +213,6 @@ footer a{
 img {
 
 }
-
-
 
 
 .sbx-custom {

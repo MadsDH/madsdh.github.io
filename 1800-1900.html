@@ -2,12 +2,12 @@
 <html lang="" dir="ltr">
   <head>
     <link rel="stylesheet" href="style.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="java.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tijd van burgers & stoommachines</title>
+    <title>Tijd van Burgers & Stoommachines</title>
   </head>
   <body>
     <header>
@@ -40,7 +40,39 @@
         document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
       </script>
     </header>
-    <section class="submenu">
+
+    <h1>Tijd van Burgers en Stoommachines</h1>
+    <div class="filters">
+      <p></p>
+    </div>
+    <section class="timeframe">
+
+      <table style="height:inherit;width:60%;background-color:lightblue;" border="0">
+        <tbody>
+          <tr style="font-weight:bold;"><td>Voornaam</td><td>Achternaam</td><td>Geboortedatum</td><td>Sterfdatum</td></tr>
+          <tr><td>Jan</td><td>Rietbergen</td><td>1854</td><td>&nbsp;</td></tr>
+          <tr><td>Antonius</td><td>van Voorn</td><td>1856</td><td>&nbsp;</td></tr>
+          <tr><td>Maria</td><td>van der Vos</td><td>1862</td><td>&nbsp;</td></tr>
+          <tr><td>Johannes Philippus</td><td>Rietbergen</td><td>1882</td><td>&nbsp;</td></tr>
+          <tr><td>Johanna Maria</td><td>van Voorn</td><td>1883</td><td>&nbsp;</td></tr>
+          <tr><td>Johanna Maria</td><td>van Voorn</td><td>1885</td><td>&nbsp;</td></tr>
+          <tr><td>Helena Geertruida</td><td>van Voorn</td><td>1886</td><td>&nbsp;</td></tr>
+          <tr><td>Theodora Johanna</td><td>van Voorn</td><td>1891</td><td>&nbsp;</td></tr>
+          <tr><td>Johanna Maria</td><td>van Voorn</td><td>1893</td><td>&nbsp;</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="timeframe-image">
+
+    </section>
+    <section class="timeframe-story">
+
+    </section>
+    <section>
+
+    </section>
+    <!-- NOTE: Old list
+    <section >
       <button onclick="sortListDir()">Sort</button>
       <ol id="id01" style="list-style-type:upper-roman">
         <li><a href="personen\1800\1854RietbergenJan.html" class="menu">Jan Rietbergen 1854</a></li>
@@ -54,5 +86,7 @@
         <li><a href="personen\1800\1893vanVoornJohannaMaria.html" class="menu">Johanna Maria van Voorn 1893</a></li>
       </ol>
     </section>
+    -->
+
   </body>
 </html>
