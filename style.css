@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 p {
   margin: 5px 0;
 }
@@ -19,10 +23,10 @@ a:hover {
 
 h1 {
   font-family: serif;
-
   text-decoration: underline;
-  text-underline-offset: 15px;
-  margin: 40px
+  text-underline-offset: 30px;
+  text-decoration-color: #7D7C58;
+  font-size: 3.3vw;
 }
 
 .stats {
@@ -33,38 +37,30 @@ h1 {
   height: 460;
 }
 
-.timeframe {
-  display: inline-block;
-  background-color: #d3d3d3;
-  margin-left: 40px;
+nav {
+  float: left;
   width: 60%;
-  height: 720px;
+  padding: 40px;
+  padding-right: 100px;
+  height: 1200px;
 }
 
-.timeframe-image {
-  display: inline-block;
-  background-color: aqua;
-  margin-right: 40px;
-  float: right;
-  width: 35%;
-  height: 360px;
+article {
+  float: left;
+  padding: 100px;
+  padding-bottom: 20px;
+  width: 40%;
 }
 
-.timeframe-story {
-  display: flex;
-  background-color: darkred;
-  margin-right: 40px;
-  float: right;
-  width: 35%;
-  height: 360px;
+tr {
+  height: 40px;
 }
 
 .filters {
-  margin-left: 40px;
-  background-color: yellow;
-  width: 60%;
-  height: 25px;
+  background-color: #e0cbb6;
+  height: 50px;
 }
+
 
 header {
   background-color: #7D7C58;
